@@ -1,0 +1,136 @@
+
+ .form-gap {
+  padding-top: 20px;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  max-width:960px;
+  height:auto;
+}
+
+.container {
+  padding: 5px;
+  width:  auto;
+  height: auto;
+  align-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 3px;
+  background-color: rgba(0,0,0,0.5) !important;
+}
+
+html{ 
+  font-family: 16px Arial, Helvetica, sans-serif;
+  background-size: cover;
+  height: 100%;
+  font-family: 'Numans', sans-serif;
+  color: #fff;
+  }
+
+body{
+  margin: 0;
+  background: url(skate.jpg.),  url(ice.jpg.) ;
+  background-repeat: no-repeat, repeat;
+  background-position: top center;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=email] , input[type=tel]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus , input[type=email]:focus, input[type=tel]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section 
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+*/
+
+
+/*the container must be positioned relative:*/
+.autocomplete {
+    position: relative;
+    display: inline-block;
+  }
+
+
+  input {
+    border: 1px solid transparent;
+    background-color: #000;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: rgb(112, 112, 112); 
+  border-bottom: 1px solid #d4d4d4; 
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #44443; 
+}
+
+/*when navigating through the items using the arrow keys:
+.autocomplete-active {
+  background-color: DodgerBlue !important; 
+  color: #ffffff; */

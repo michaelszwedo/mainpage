@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>T-Rex Online Hockey Shop</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Hockey Online Store">
+  <meta name="author" content="Michael Szwedo">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="product.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="shop.html"> <img src="DinoOnIce.png" class="logo" alt="Company Logo"> </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <!--  <li class="active"><a href="#">Home</a></li>  -->
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Products
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="player.html">Player</a></li>
+              <li><a href="goalie.html">Goalie</a></li>
+              <li><a href="inline.html">Inline</a></li>
+            </ul>
+          </li>
+        <li><a href="deals.html">Deals</a></li>
+        <li><a href="error.html">NHL Fan Zone</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="login.html"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--  poczatek slidera w jumbotron -->
+<div class="jumbotron">
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+     <img src="mainlogo.jpg" class="img-responsive" style="width:100%" alt="Image">
+     <div class="text">Caption One</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="mainlogogreen.jpg" class="img-responsive" style="width:100%" alt="Image">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="mainlogored.jpg" class="img-responsive" style="width:100%" alt="Image">
+    <div class="text">Caption Three</div>
+  </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<script>
+
+var slideIndex = 0;
+  var slides = document.getElementsByClassName("mySlides");
+
+showSlides();
+
+function showSlides() {    
+    var i;    
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 2500); // Change image every 2,5 seconds przy dluzszym czasie     pokazuje sie pyste tlo  ptem kolejny obraz
+}
+
+function currentSlide(no) {
+    var i;    
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex = no;
+    slides[no-1].style.display = "block";
+}
+
+function plusSlides(n) {
+  var newslideIndex = slideIndex + n;
+  if(newslideIndex < 4 && newslideIndex > 0){
+     currentSlide(newslideIndex);
+  }
+}
+</script>
+
+</div>
+<!-- the end of  slider and  jumbotron-->
+
+
+<div class="container-fluid">
+  <div class="content-wrapper">	
+  <div class="item-container">	
+    <div class="container">	
+      <div class="col-md-12">
+        <div class="product col-md-6">
+                  
+          <div id="wrap123">
+            <div><img class="magniflier" src="25.jpg" width="300"/></div>
+          </div>          
+        </div>
+                        <!-- Time for jquery action -->
+                        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+                        <script>
+                            $(function() {
+                      
+                        var native_width = 0;
+                        var native_height = 0;
+                        var mouse = {x: 0, y: 0};
+                        var magnify;
+                        var cur_img;
+                      
+                        var ui = {
+                          magniflier: $('.magniflier')
+                        };
+                      
+                        // Add the magnifying glass
+                        if (ui.magniflier.length) {
+                          var div = document.createElement('div');
+                          div.setAttribute('class', 'glass');
+                          ui.glass = $(div);
+                      
+                          $('body').append(div);
+                        }
+
+                        // All the magnifying will happen on "mousemove"
+                      
+                        var mouseMove = function(e) {
+                          var $el = $(this);
+                      
+                          // Container offset relative to document
+                          var magnify_offset = cur_img.offset();
+                      
+                          // Mouse position relative to container
+                          // pageX/pageY - container's offsetLeft/offetTop
+                          mouse.x = e.pageX - magnify_offset.left;
+                          mouse.y = e.pageY - magnify_offset.top;
+                          
+                          // The Magnifying glass should only show up when the mouse is inside
+                          // It is important to note that attaching mouseout and then hiding
+                          // the glass wont work cuz mouse will never be out due to the glass
+                          // being inside the parent and having a higher z-index (positioned above)
+                          if (
+                            mouse.x < cur_img.width() &&
+                            mouse.y < cur_img.height() &&
+                            mouse.x > 0 &&
+                            mouse.y > 0
+                            ) {
+                      
+                            magnify(e);
+                          }
+                          else {
+                            ui.glass.fadeOut(100);
+                          }
+                      
+                          return;
+                        };
+                      
+                        var magnify = function(e) {
+                      
+                          // The background position of div.glass will be
+                          // changed according to the position
+                          // of the mouse over the img.magniflier
+                          //
+                          // So we will get the ratio of the pixel
+                          // under the mouse with respect
+                          // to the image and use that to position the
+                          // large image inside the magnifying glass
+                      
+                          var rx = Math.round(mouse.x/cur_img.width()*native_width - ui.glass.width()/2)*-1;
+                          var ry = Math.round(mouse.y/cur_img.height()*native_height - ui.glass.height()/2)*-1;
+                          var bg_pos = rx + "px " + ry + "px";
+                          
+                          // Calculate pos for magnifying glass
+                          //
+                          // Easy Logic: Deduct half of width/height
+                          // from mouse pos.
+                      
+                          // var glass_left = mouse.x - ui123.glass.width() / 2;
+                          // var glass_top  = mouse.y - ui123.glass.height() / 2;
+                          var glass_left = e.pageX - ui.glass.width() / 2;
+                          var glass_top  = e.pageY - ui.glass.height() / 2;
+                          //console.log(glass_left, glass_top, bg_pos)
+                          // Now, if you hover on the image, you should
+                          // see the magnifying glass in action
+                          ui.glass.css({
+                            left: glass_left,
+                            top: glass_top,
+                            backgroundPosition: bg_pos
+                          });
+                      
+                          return;
+                        };
+                      
+                        $('.magniflier').on('mousemove', function() {
+                          ui.glass.fadeIn(100);
+                          
+                          cur_img = $(this);
+                      
+                          var large_img_loaded = cur_img.data('large-img-loaded');
+                          var src = cur_img.data('large') || cur_img.attr('src');
+                      
+                          // Set large-img-loaded to true
+                          // cur_img.data('large-img-loaded', true)
+                      
+                          if (src) {
+                            ui.glass.css({
+                              'background-image': 'url(' + src + ')',
+                              'background-repeat': 'no-repeat'
+                            });
+                          }
+                      
+                          // When the user hovers on the image, the script will first calculate
+                          // the native dimensions if they don't exist. Only after the native dimensions
+                          // are available, the script will show the zoomed version.
+                          //if(!native_width && !native_height) {
+                      
+                            if (!cur_img.data('native_width')) {
+                              // This will create a new image object with the same image as that in .small
+                              // We cannot directly get the dimensions from .small because of the 
+                              // width specified to 200px in the html. To get the actual dimensions we have
+                              // created this image object.
+                              var image_object = new Image();
+                      
+                              image_object.onload = function() {
+                                // This code is wrapped in the .load function which is important.
+                                // width and height of the object would return 0 if accessed before 
+                                // the image gets loaded.
+                                native_width = image_object.width;
+                                native_height = image_object.height;
+                      
+                                cur_img.data('native_width', native_width);
+                                cur_img.data('native_height', native_height);
+                      
+                                //console.log(native_width, native_height);
+                      
+                                mouseMove.apply(this, arguments);
+                      
+                                ui.glass.on('mousemove', mouseMove);
+                              };
+                      
+                      
+                              image_object.src = src;
+                              
+                              return;
+                            } else {
+                      
+                              native_width = cur_img.data('native_width');
+                              native_height = cur_img.data('native_height');
+                            }
+                          //}
+                          //console.log(native_width, native_height);
+                      
+                          mouseMove.apply(this, arguments);
+                      
+                          ui.glass.on('mousemove', mouseMove);
+                        });
+                      
+                        ui.glass.on('mouseout', function() {
+                          ui.glass.off('mousemove', mouseMove);
+                        });
+                      
+                      });
+                        </script>
+                  
+
+                  <div class="col-md-6">
+                          <div class="product-title">BAUER VAPOR S17 1X SENIOR GOAL SHORTS</div>
+                          <div class="product-desc">Average Customer Ratings</div>
+                          <div class="product-rating"><i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star-o"></i> </div>
+                          <hr>
+                          <div class="product-price">260$</div>
+                          <div class="product-stock">In Stock</div>
+                          <hr>
+                          <div class="btn-group cart">
+                              <button type="button" class="btn btn-success">
+                                  Add to cart 
+                              </button>
+                          </div>
+                         
+                      </div>
+      </div>
+        
+      
+    </div> 
+  </div>
+  <div class="container-fluid">		
+    <div class="col-md-12 product-info">
+        <ul id="myTab" class="nav nav-tabs nav_tabs">
+          
+          <li class="active"><a href="#service-one" data-toggle="tab">DESCRIPTION</a></li>
+        
+          <li><a href="#service-three" data-toggle="tab">REVIEWS</a></li>
+          
+        </ul>
+      <div id="myTabContent" class="tab-content">
+          <div class="tab-pane fade in active" id="service-one">
+           
+            <section class="container product-info">
+              
+              <h3>BAUER VAPOR S17 1X SENIOR GOAL SHORTS</h3>
+             <p>The Bauer Vapor S17 1X Senior Goal Shorts has been designed for the most mobile goalies, these pants provide the utmost protection while 
+                 allowing the utmost movement. The Fast Strap adjustable harness belt is made to fit any goalie, while AEROLITE technology gives lightweight 
+                 protection to the belly and spine. Plus, 37.5® Technology evaporates sweat, keeping players always on top of their game.</p> 
+               
+            </section>
+                    
+          </div>
+        <div class="tab-pane fade" id="service-two">
+          
+          <section class="container">
+              
+          </section>
+          
+        </div>
+        <div class="tab-pane fade" id="service-three">
+                      
+        </div>
+      </div>
+      <hr>
+    </div>
+  </div>
+</div>
+</div>
+
+<br>
+
+
+<footer class="container-fluid text-center">
+
+  <div class="social_media">
+    <a  target="_blank" href="https://www.facebook.com/" class="fa fa-facebook"></a>
+    <a  target="_blank" href="https://www.twitter.com/" class="fa fa-twitter"></a>
+    <a  target="_blank" href="https://www.instagram.com/" class="fa fa-instagram"></a>
+  </div>
+  
+  <br>
+
+  <form class="form-inline">Get deals:
+    <input type="email" class="form-control" size="50" placeholder="Email Address">
+    <button type="button" class="btn btn-danger">Sign Up</button>
+  </form>
+
+<br>
+
+  <small><p>2019 &copy; All rights reserved. Created by Michal Szwedo</p></small>
+
+ <!-- <p>Online Store Copyright</p>  -->
+
+
+
+</footer>
+
+</body>
+</html>
