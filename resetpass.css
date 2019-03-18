@@ -21,7 +21,7 @@
   }
 
   html,body{
-    background-image: url('skate.jpg');
+    background-image: url("skate.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -30,9 +30,4 @@
     }
     
     
-    
-
-/* zmiana hasla link do srony
-https://bootsnipp.com/snippets/O5BPO
-
-*/
+   

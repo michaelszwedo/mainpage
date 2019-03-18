@@ -30,7 +30,7 @@ html{
 
 body{
   margin: 0;
-  background: url(skate.jpg.),  url(ice.jpg.) ;
+  background: url("skate.jpg"),  url("ice.jpg") ;
   background-repeat: no-repeat, repeat;
   background-position: top center;
 }
