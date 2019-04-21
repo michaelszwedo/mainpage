@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="ShapeUP.css">
-<link rel="stylesheet" href="contact.css">
+<link rel="stylesheet" href="news.css">
 </head>
 
 <body>
@@ -25,6 +25,18 @@
     <a href="services.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SERVICES</a>
     <a href="news.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">NEWS</a>
     <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+ 
+ <!--   
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+        <a href="#" class="w3-bar-item w3-button">Extras</a>
+        <a href="#" class="w3-bar-item w3-button">Media</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+    -->
 
   </div>
 </div>
@@ -35,74 +47,81 @@
   <a href="services.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SERVICES</a>
   <a href="news.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">NEWS</a>
   <a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-
+<!--
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+-->
 </div>
+
 
 <!-- Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:80px">
-
-  <!-- Automatic Slideshow Images -->
-  <div class="w3-display-container w3-center">
-    <img src="contact.jpg" alt="Contact us" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-42 w3-hide-small">
-      <h1>Contact</h1>
+    <!-- Automatic Slideshow Images -->
+    <div class="w3-display-container w3-center">
+      <img src="newsbig.jpg" alt="Our Classes" style="width:100%">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-42 w3-hide-small">
+        <h1>News</h1>
+      </div>
     </div>
   </div>
 
+<div class="w3-light-grey"> 
+  <div class="w3-container w3-content w3-padding-64" style="max-width:960px">
+    <h2 class="w3-wide w3-center"> News in our company</h2>
+    <p class="w3-justify"> <p>10 tips to set a slimmer body text</p>
+   </div>   
+</div>
+
+  
+  <div class="w3-black" id="tour"> 
+    <div class="w3-container w3-content w3-padding-64" style="max-width:960px">
+      <h2 class="w3-wide w3-center">News in our company</h2>
+      <p class="w3-justify"> <p>5 diets you need</p>
+    </div>
+</div>
+ 
+
+
+   
+      
+
+
   <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:960px" id="contact">
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
     <h2 class="w3-wide w3-center">Contact</h2>
-      <p class="w3-opacity w3-center"><i>Do you have question? <br> Speak to our Member Experience Team</i></p>
-      <div class="w3-row w3-padding-32">
-
-
-  <div class="row">
-      <div class="column" style="background-color:#f1f1f1;">
-          <h2 class="contact_left" >Get in touch</h2>
-          <div class="w3-col m11">
-            <form action="/action_page.php" target="_blank">
-            
-                <div class="w3-half">
-                  <input class="w3-input w3-border" type="text" placeholder="Your First name" required name="First name">
-                </div>
-                <div class="w3-half">
-                    <input class="w3-input w3-border" type="text" placeholder="Your  Last name" required name="Last name">
-                  </div>
-                  <div class="w3-half">
-                    <input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject">
-                  </div>
-                <div class="w3-half">
-                  <input class="w3-input w3-border" type="text" placeholder="Your Email" required name="Email">
-                </div>
-              
-              <textarea placeholder="Write something.." required name="message" style="height:150px"></textarea>   
-    
-              <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
-            </form>
-          </div>
+    <p class="w3-opacity w3-center"><i>Do you have question? <br> Speak to our Member Experience Team</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Fitness Street, Health City, ON<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +1 613-123-4567<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: shapeup@shapeup.com<br>
       </div>
-      <div class="column" style="background-color:#f1f1f1;">
-          <h2 class="contact_right" >Address</h2>
-    
-          <div class="address">
-                    <i class="fa fa-map-marker" style="width:30px"></i> Fitness Street, Health City, ON<br>
-                    <i class="fa fa-phone" style="width:30px"></i> Phone: +1 613-123-4567<br>
-                    <i class="fa fa-envelope" style="width:30px"> </i> Email: shapeup@shapeup.com<br>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px"></div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Your First name" required name="First name">
+            </div>
+            <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Your  Last name" required name="Last name">
+              </div>
+              <div class="w3-half">
+                  <input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject">
+                </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Your Email" required name="Email">
+            </div>
+          
+          <textarea placeholder="Write something.." required name="message" style="height:170px"></textarea>
+         
 
-                    <br>
-
-                    <div class="social_address">
-                      <i class="fa fa-facebook" style="width:30px"></i> <a target="_blank" href="https://www.facebook.com/" class="w3-hover-opacity"> facebook</a> <br>
-                      <i class="fa fa-instagram" style="width:30px"></i> <a target="_blank" href="https://www.instagram.com/" class="w3-hover-opacity"> instagram</a> <br>
-                      <i class="fa fa-twitter" style="width:30px"></i> <a target="_blank" href="https://www.twitter.com/" class="w3-hover-opacity"> twitter</a> <br>              
-                    </div>
-          </div>
-          </div> 
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
       </div>
     </div>
-   
-</div>
-</div>
+  </div>
+  
+<!-- End Page Content -->
+
 
 <!-- Image of location/map --> <!-- Need API key from google-->
 
@@ -140,16 +159,16 @@ var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
   <div class="apps">
       <h2>Download Our App</h2>
-       <i><a target="_blank" href="https://www.apple.com/ca/ios/app-store" class="w3-hover-opacity" ><img src="appstore.png" alt="Available on the App Store" style="width:16%"></a></i>
-      <i><a target="_blank" href="https://play.google.com/store/apps" class="w3-hover-opacity" ><img src="googlePlay.png" alt="Available on the Google Play" style="width:16%"></a></i>
+       <i><a target="_blank" href="https://www.apple.com/ca/ios/app-store" class="w3-hover-opacity" ><img src="appstore.png" alt="Available on the App Store" style="width:15%"></a></i>
+      <i><a target="_blank" href="https://play.google.com/store/apps" class="w3-hover-opacity" ><img src="googlePlay.png" alt="Available on the Google Play" style="width:15%"></a></i>
   </div>
 
 
   <p class="w3-medium"> 2019 &copy; All rights reserved. Created by Michael Szwedo</p>
 </footer>
 
-
 <script>
+
 // Used to toggle the menu on small screens when clicking on the menu button
 function myFunction() {
   var x = document.getElementById("navDemo");
