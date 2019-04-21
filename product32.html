@@ -28,7 +28,6 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <!--  <li class="active"><a href="#">Home</a></li>  -->
         <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Products
             <span class="caret"></span></a>
@@ -50,7 +49,7 @@
   </div>
 </nav>
 
-<!--  poczatek slidera w jumbotron -->
+<!--begin slidera in jumbotron -->
 <div class="jumbotron">
 
 <div class="slideshow-container">
@@ -90,7 +89,7 @@ function showSlides() {
     slideIndex++;
     if (slideIndex> slides.length) {slideIndex = 1} 
     slides[slideIndex-1].style.display = "block"; 
-    setTimeout(showSlides, 2500); // Change image every 2,5 seconds przy dluzszym czasie     pokazuje sie pyste tlo  ptem kolejny obraz
+    setTimeout(showSlides, 2500); // Change image every 2,5 seconds 
 }
 
 function currentSlide(no) {
@@ -122,7 +121,7 @@ function plusSlides(n) {
         <div class="product col-md-6">
                   
           <div id="wrap123">
-            <div><img class="magniflier" src="32.jpg" width="300"/></div>
+            <div><img class="magniflier" src="32.jpg" alt="product32" width="300"/></div>
           </div>          
         </div>
                         <!-- Time for jquery action -->
@@ -305,43 +304,25 @@ function plusSlides(n) {
                           </div>
                       </div>
       </div>
-        
-      
+
     </div> 
   </div>
   <div class="container-fluid">		
     <div class="col-md-12 product-info">
         <ul id="myTab" class="nav nav-tabs nav_tabs">
-          
           <li class="active"><a href="#service-one" data-toggle="tab">DESCRIPTION</a></li>
-        
           <li><a href="#service-three" data-toggle="tab">REVIEWS</a></li>
-          
         </ul>
       <div id="myTabContent" class="tab-content">
           <div class="tab-pane fade in active" id="service-one">
-           
             <section class="container product-info">
-              
               <h3>BAUER VAPOR XR800 ROLLER PANTS SENIOR</h3>
              <p>The Bauer Vapor XR800 Pants were built to provide elite-level breathability, playability, and comfort. The XR800 features
                   a full stretch mesh nylon body for maximum airflow and dynamic mobility. The thin nylon knee panels help to keep the pant
                   lightweight without comprising its durability. Ensuring the pants aren't just super comfortable but look great too is the 
                   hockey lace ties on the easy to use stretch waistband.</p>
-            
-            </section>
-                    
+            </section>         
           </div>
-        <div class="tab-pane fade" id="service-two">
-          
-          <section class="container">
-              
-          </section>
-          
-        </div>
-        <div class="tab-pane fade" id="service-three">
-                      
-        </div>
       </div>
       <hr>
     </div>
@@ -369,11 +350,7 @@ function plusSlides(n) {
 
 <br>
 
-  <small><p>2019 &copy; All rights reserved. Created by Michal Szwedo</p></small>
-
- <!-- <p>Online Store Copyright</p>  -->
-
-
+  <small>2019 &copy; All rights reserved. Created by Michal Szwedo</small>
 
 </footer>
 

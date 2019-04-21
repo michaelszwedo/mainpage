@@ -28,7 +28,6 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <!--  <li class="active"><a href="#">Home</a></li>  -->
         <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Products
             <span class="caret"></span></a>
@@ -50,7 +49,7 @@
   </div>
 </nav>
 
-<!--  poczatek slidera w jumbotron -->
+<!--begin slider in jumbotron -->
 <div class="jumbotron">
 
 <div class="slideshow-container">
@@ -90,7 +89,7 @@ function showSlides() {
     slideIndex++;
     if (slideIndex> slides.length) {slideIndex = 1} 
     slides[slideIndex-1].style.display = "block"; 
-    setTimeout(showSlides, 2500); // Change image every 2,5 seconds przy dluzszym czasie     pokazuje sie pyste tlo  ptem kolejny obraz
+    setTimeout(showSlides, 2500); // Change image every 2,5 seconds 
 }
 
 function currentSlide(no) {
@@ -122,7 +121,7 @@ function plusSlides(n) {
         <div class="product col-md-6">
                   
           <div id="wrap123">
-            <div><img class="magniflier" src="31.jpg" width="300"/></div>
+            <div><img class="magniflier" src="31.jpg" alt="product31" width="300"/></div>
           </div>          
         </div>
                         <!-- Time for jquery action -->
@@ -312,37 +311,26 @@ function plusSlides(n) {
   <div class="container-fluid">		
     <div class="col-md-12 product-info">
         <ul id="myTab" class="nav nav-tabs nav_tabs">
-          
           <li class="active"><a href="#service-one" data-toggle="tab">DESCRIPTION</a></li>
-        
           <li><a href="#service-three" data-toggle="tab">REVIEWS</a></li>
-          
         </ul>
       <div id="myTabContent" class="tab-content">
           <div class="tab-pane fade in active" id="service-one">
-           
             <section class="container product-info">
-              
               <h3>MISSION INHALER NLS3 ROLLER HOCKEY SKATES SENIOR</h3>
-             <p>The Mission Inhaler NLS3 Skate offers a good balance between high-end performance and cost-effectiveness. Mission utilized a traditional Tech Mesh quarter package that provides high-end support without being extremely stiff like modern composite boots. Since its also fully thermoformable, players will feel excellent out of the box comfort without a long break-in time. </p>
-            <p>The lowers maintain high-end specs with the Variant Classic indoor wheels with their Hi-Lo ABEC 9 bearings. These sit in the NLS3's Hi-Lo, one-piece aluminum chassis that puts players in an aggressive forward pitch. This forward stance allows for some of the best agility and acceleration on the market, which are just a few reasons why it's one of the most popular setups on the market. </p>
-            <p>Completely unique to the Inhaler line are the toe cap and the side quarter vents. The toe cap allows cool air to flow through the front of the boot while the side vents push hot air out, ensuring the feet are as cool and as comfortable as possible. </p>
-            The paddle on the Supreme S27 goal stick is carbon composite construction with the Supreme Ergo paddle geometry for maximum rebound control.</p>
-             <p>The shaft on the S27 goalie stick has a carbon wrap to help reduce the weight and a well balanced stick. The blade has a low-density foam insert for added dampening properties. The shoulder and handle of the S27 goal stick features a griptac control zone for a slip-free grip.</p>
-
-            </section>
-                    
+                <p>The Mission Inhaler NLS3 Skate offers a good balance between high-end performance and cost-effectiveness. Mission utilized a traditional Tech Mesh 
+                  quarter package that provides high-end support without being extremely stiff like modern composite boots. Since its also fully thermoformable, 
+                  players will feel excellent out of the box comfort without a long break-in time. </p>
+                <p>The lowers maintain high-end specs with the Variant Classic indoor wheels with their Hi-Lo ABEC 9 bearings. These sit in the NLS3's Hi-Lo, 
+                  one-piece aluminum chassis that puts players in an aggressive forward pitch. This forward stance allows for some of the best agility and acceleration
+                  on the market, which are just a few reasons why it's one of the most popular setups on the market. </p>
+                <p>Completely unique to the Inhaler line are the toe cap and the side quarter vents. The toe cap allows cool air to flow through the front of the boot 
+                  while the side vents push hot air out, ensuring the feet are as cool and as comfortable as possible. The paddle on the Supreme S27 goal stick
+                  is carbon composite construction with the Supreme Ergo paddle geometry for maximum rebound control.</p>
+                <p>The shaft on the S27 goalie stick has a carbon wrap to help reduce the weight and a well balanced stick. The blade has a low-density foam insert for 
+                  added dampening properties. The shoulder and handle of the S27 goal stick features a griptac control zone for a slip-free grip.</p>
+            </section>        
           </div>
-        <div class="tab-pane fade" id="service-two">
-          
-          <section class="container">
-              
-          </section>
-          
-        </div>
-        <div class="tab-pane fade" id="service-three">
-                      
-        </div>
       </div>
       <hr>
     </div>
@@ -351,7 +339,6 @@ function plusSlides(n) {
 </div>
 
 <br>
-
 
 <footer class="container-fluid text-center">
 
@@ -370,11 +357,7 @@ function plusSlides(n) {
 
 <br>
 
-  <small><p>2019 &copy; All rights reserved. Created by Michal Szwedo</p></small>
-
- <!-- <p>Online Store Copyright</p>  -->
-
-
+  <small>2019 &copy; All rights reserved. Created by Michal Szwedo</small>
 
 </footer>
 

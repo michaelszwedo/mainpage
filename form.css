@@ -21,7 +21,8 @@
 }
 
 html{ 
-  font-family: 16px Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size:16px;
   background-size: cover;
   height: 100%;
   font-family: 'Numans', sans-serif;
@@ -39,7 +40,6 @@ body{
 * {
   box-sizing: border-box;
 }
-
 
 
 /* Full-width input fields */
@@ -84,13 +84,6 @@ a {
   color: dodgerblue;
 }
 
-/* Set a grey background color and center the text of the "sign in" section 
-.signin {
-  background-color: #f1f1f1;
-  text-align: center;
-}
-*/
-
 
 /*the container must be positioned relative:*/
 .autocomplete {
@@ -127,10 +120,5 @@ a {
 
 /*when hovering an item:*/
 .autocomplete-items div:hover {
-  background-color: #44443; 
+  background-color: #444443; 
 }
-
-/*when navigating through the items using the arrow keys:
-.autocomplete-active {
-  background-color: DodgerBlue !important; 
-  color: #ffffff; */

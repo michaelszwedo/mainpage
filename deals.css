@@ -5,6 +5,15 @@ body {
   height: 100%;
 }
 
+@font-face {
+  font-family: CollegiateFLF;
+  src: url(CollegiateFLF.ttf);
+}
+
+* {
+  font-family: verdana;
+}
+
  .logo   {
   opacity: 0.7;
   max-width: 100%;
@@ -93,7 +102,7 @@ a:hover	{
 }
 
 
-/* player goaie i inline kolory itp*/
+/* player goaie and inline color itp*/
 
 .panel-body-player{
   background-color: #000;
@@ -116,7 +125,7 @@ a:hover	{
 
 
 
-  /* test slidera poczatek */
+  /* slider begin */
 
   * {box-sizing: border-box;}
 
@@ -157,26 +166,6 @@ a:hover	{
   background-color: rgba(0,0,0,0.8);
 }
 
-  /* Caption text 
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-  
-  Number text (1/3 etc)
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-   */
 
   /* The dots/bullets/indicators */
   .dot {
@@ -217,17 +206,13 @@ a:hover	{
     .text {font-size: 11px}
   }
   
-  /*koniec testu slidera*/
+  /*thr end slider*/
 
 
 
- /********************* shopping Demo-1 **********************/
+ /**shopping**/
 
  h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;color: #fff;}
-
- /********************* shopping Demo-1 **********************/
-
-
 
 
 .product-grid{font-family:Raleway,sans-serif;text-align:center;padding:0 0 72px;border:1px solid rgba(0,0,0,.1);overflow:hidden;position:relative;z-index:1}
@@ -265,8 +250,6 @@ a:hover	{
   position:relative;
   transition:all .3s ease-in-out}
 
-  /*nie wysrodkowuje elementu, jak zmanim wys i szer to cos siei zmienia poprawic to trzeba*/
-
 
 .product-grid .social li a:hover{color:#fff;background-color:#c9302c;}
 
@@ -285,4 +268,14 @@ a:hover	{
 @media only screen and (max-width:990px){.product-grid{margin-bottom:30px}
 }
 
+.responsive {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 25px;
+}
 
+p{
+ font-size: 16px;
+ color: #000;
+}
