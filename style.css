@@ -27,7 +27,7 @@ body {
 
 
 .mobile-container {
-  max-width: auto;
+  max-width: 2000px;
   margin: auto;
   background-color: #555;
   height: auto;
@@ -190,7 +190,7 @@ p {
 
 aside {
 
-    width:80;
+    width:960px;
     margin-right:auto;
     margin-left: auto;
     font-size:.8em;
