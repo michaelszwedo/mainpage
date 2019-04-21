@@ -86,9 +86,11 @@ input[type=text], input[type=email],select, textarea {
 
 
 .responsive {
+    width: auto;
     max-width: 60px;
     height: auto;
     max-height: 60px
+    
   }
 
 .social{
