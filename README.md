@@ -53,27 +53,25 @@ List of features ready and TODOs for future development. Information about indiv
 * _Main site_ was created to show a few of my web projects, information about me and contact information. It is a one-page website created using HTML, CSS and JS. The page is responsive, and suit to widescreen TVs, desktops, laptops, mobile types of equipment and smartphones.
   Include files: index.html and style.css, footer_lodyas.png, logoname.png, main-picture.jpg.
 
-* T-rex Hockey store is imaginary company website. It was created using: HTML, CSS, js, bootstrap, jquery and fonts from google and cdnjs. The page is responsive, and suit to widescreen TVs, desktops, laptops, mobile types of equipment and smartphones. Project include graphics and photos what I've made by myself as well as pictures from photos bank. 
+* _T-rex Hockey store_ is imaginary company website. It was created using: HTML, CSS, js, bootstrap, jquery and fonts from google and cdnjs. The page is responsive, and suit to widescreen TVs, desktops, laptops, mobile types of equipment and smartphones. Project include graphics and photos what I've made by myself as well as pictures from photos bank. 
  The pages are without back-end. 
  Filename: shop.html it's the main page of the T-Rex Hockey Store.
  Other files: "HTML" - contact, deals, login, change pass, reset pass, form, player, goalie, inline, a product files with a number, error. "CSS"- has the same name as HTML files. Files named from 01 to 35, and named player, goalie, inline, skate, hockey shop, gift card, map, DinoOnIce, main logo, mainlogored, mianlogogreen are a jpg and png files. 
 
-* Shape Up! Gym and Fitness Centre is an imaginary company website. It was created using: HTML, CSS, js, and fonts from google and cdnjs. The page is responsive, and suit to widescreen TVs, desktops, laptops, mobile types of equipment and smartphones. Project include graphics and photos what I've made by myself as well as pictures from photos bank. 
+* _Shape Up! Gym and Fitness Centre_ is an imaginary company website. It was created using: HTML, CSS, js, and fonts from google and cdnjs. The page is responsive, and suit to widescreen TVs, desktops, laptops, mobile types of equipment and smartphones. Project include graphics and photos what I've made by myself as well as pictures from photos bank. 
  The pages are without back-end. 
  The file named: index_shape_up.html it's the main page of the Gym and Fitness Centre.
-
  Other files: name_shape_up with.html and name_shape_up with.css"  Graphics files .jpg and .png files are also included. 
 
-* The "Pure CSS illustration was created during "Hackathon" and was focused on CSS, especially on transforms, transition and animation in CSS. The page is without responsivity. It was created using only HTML, CSS.
+* _The "Pure CSS illustration_ was created during "Hackathon" and was focused on CSS, especially on transforms, transition and animation in CSS. The page is without responsivity. It was created using only HTML, CSS.
 File named: purecss.html and pure.css are the files from that project
  
-* Project called "Joanna Kruszynska-Szwedo - violinist" it is a website created using a template from "wixsite". It doesn't include HTML, CSS and js code.
+* _"Joanna Kruszynska-Szwedo - violinist"_ it is a website created using a template from "wixsite". It doesn't include HTML, CSS and js code.
 It presents some kind of sense of design. Website content and design (graphics, photos, music, movie) was created by myself.
 
 To-do list:
 
 * Improve project: Pure CSS Illustration to responsive website
-
 
 ## Status
 * The main site is: in _progress_ because I am going to add new projects.
