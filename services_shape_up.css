@@ -49,6 +49,45 @@ body {
     padding: 0 8px;
   }
   
+  /* Create three equal columns that floats next to each other */
+  .column_1 {
+    float: left;
+    width: 33%;
+    padding: 10px;
+  }
+
+   /* Float four columns side by side */
+   .column_4 {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+ /* Responsive columns */
+ @media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 630px) {
+    .column_1 {
+      width: 100%;
+    }
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column_4 {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
   /* Remove extra left and right margins, due to padding */
   .row {
     margin: 0 -5px;
@@ -61,15 +100,6 @@ body {
     clear: both;
   }
   
-  /* Responsive columns */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-  }
-  
   /* Style the counter cards */
   .card {
     padding: 0;
@@ -77,10 +107,11 @@ body {
     background-color: #fff;
   }
 
-.w3-container w3-white{ 
+/*
+.w3-container w3-white { 
 
 }
-
+*/
 
 input[type=text], input[type=email],select, textarea {
     width: 100%;
@@ -158,8 +189,8 @@ h2{
   color: #ba007c;
 }
 
-.w3-text{
-color: #ba007c;
+.w3-text {
+  color: #ba007c;
       }
 
 .w3-justify{
@@ -173,5 +204,160 @@ h1{
 .w3-padding-32{
   padding-top:32px!important;
   padding-bottom:2px!important;
+}
+
+
+
+
+
+/* Pricing */
+
+
+.package
+{
+	width: 100%;
+}
+.package:hover
+{
+
+}
+
+.package_title_container
+{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+	border-top: solid 2px #d4dcde;
+	border-left: solid 2px #d4dcde;
+	border-right: solid 2px #d4dcde;
+}
+.package:hover .package_title_container
+{
+	border-top: solid 2px #ba007c;
+	border-left: solid 2px #ba007c;
+	border-right: solid 2px #ba007c;
+}
+.package_title
+{
+	font-size: 24px;
+	font-weight: 600;
+	color: #000;
+	line-height: 1.2;
+}
+.package_price_container
+{
+	display: inline-block;
+	margin-top: 34px;
+}
+.package_price
+{
+	font-size: 48px;
+	font-weight: 500;
+	color: #ba007c;
+	line-height: 0.75;
+}
+.package_price span
+{
+	font-size: 12px;
+	font-weight: 500;
+	color: #aaaaaa;
+	line-height: 0.75;
+	white-space: nowrap;
+	vertical-align: baseline;
+}
+.package_price_container > div:last-child
+{
+	position: absolute;
+	top: 3px;
+	left: 67%;
+	font-size: 16px;
+	font-weight: 500;
+	color: #373636;
+	line-height: 0.75;
+}
+.pricing_image
+{
+	width: 100%;
+}
+
+
+
+.pricing_image img
+{
+	max-width: 100%;
+}
+
+.pricing_content
+{
+	padding-top: 20px;
+	padding-bottom: 5px;
+	border-left: solid 2px #d4dcde;
+	border-right: solid 2px #d4dcde;
+	border-bottom: solid 2px #d4dcde;
+}
+.package:hover .pricing_content
+{
+	border-left: solid 2px #ba007c;
+	border-right: solid 2px #ba007c;
+	border-bottom: solid 2px #ba007c;
+}
+.pricing_content ul li
+{
+	font-size: 14px;
+	color: #838383;
+	font-weight: 500;
+}
+.pricing_content ul li:not(:last-child)
+{
+	margin-bottom: 9px;
+}
+.pricing_content ul li span
+{
+	margin-right: 10px;
+}
+.pricing_button
+{
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	bottom: -21px;
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+} 
+
+
+.description{
+	font-size: 14px;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+.w3-text{
+	color: #ba007c;
+}
+h1{
+	color: #fff;
 }
 
