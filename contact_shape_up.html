@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Shape Up! Gym and Fitness Centre</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Shape Up! - Gym and Fitness Centre">
+<meta name="author" content="Michael Szwedo">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="style_shape_up.css">
+<link rel="stylesheet" href="contact_shape_up.css">
+</head>
+
+<body>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index_shape_up.html" class="w3-bar-item w3-button w3-padding-large"> <img src="logofull.png" alt="Shape_Up!_logo" class="responsive"></a> 
+    <a href="index_shape_up.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOME</a>
+    <a href="about_shape_up.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT US</a>
+    <a href="services_shape_up.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SERVICES</a>
+    <a href="news_shape_up.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">NEWS</a>
+    <a href="contact_shape_up.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="about_shape_up.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT US</a>
+  <a href="services_shape_up.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SERVICES</a>
+  <a href="news_shape_up.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">NEWS</a>
+  <a href="contact_shape_up.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:80px">
+
+  <!-- Automatic Slideshow Images -->
+      <div class="w3-display-container w3-center">
+        <img src="contact.jpg" alt="Contact us" style="width:100%">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-42 w3-hide-small">
+          <h1>Contact</h1>
+        </div>
+      </div>
+
+      <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:960px" id="contact">
+        <h2 class="w3-wide w3-center">Contact</h2>
+          <p class="w3-opacity w3-center"><i>Do you have question? <br> Speak to our Member Experience Team</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="row">
+          <div class="column" style="background-color:#f1f1f1;">
+              <h2 class="contact_left" >Get in touch</h2>
+              <div class="w3-col m11">
+                <form action="/action_page.php" target="_blank">
+                    <div class="w3-half">
+                      <input class="w3-input w3-border" type="text" placeholder="Your First name" required name="First name">
+                    </div>
+                    <div class="w3-half">
+                        <input class="w3-input w3-border" type="text" placeholder="Your  Last name" required name="Last name">
+                      </div>
+                      <div class="w3-half">
+                        <input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject">
+                      </div>
+                    <div class="w3-half">
+                      <input class="w3-input w3-border" type="text" placeholder="Your Email" required name="Email">
+                    </div>     
+                  <textarea placeholder="Write something.." required name="message" style="height:150px"></textarea>   
+                  <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+                </form>
+              </div>
+          </div>
+          <div class="column" style="background-color:#f1f1f1;">
+              <h2 class="contact_right" >Address</h2>
+              <div class="address">
+                      <i class="fa fa-map-marker" style="width:30px"></i> Fitness Street, Health City, ON<br>
+                      <i class="fa fa-phone" style="width:30px"></i> Phone: +1 613-123-4567<br>
+                      <i class="fa fa-envelope" style="width:30px"> </i> Email: shapeup@shapeup.com<br>
+                        <br>
+                    <div class="social_address">
+                      <i class="fa fa-facebook" style="width:30px"></i> <a target="_blank" href="https://www.facebook.com/" class="w3-hover-opacity"> facebook</a> <br>
+                      <i class="fa fa-instagram" style="width:30px"></i> <a target="_blank" href="https://www.instagram.com/" class="w3-hover-opacity"> instagram</a> <br>
+                      <i class="fa fa-twitter" style="width:30px"></i> <a target="_blank" href="https://www.twitter.com/" class="w3-hover-opacity"> twitter</a> <br>              
+                    </div>
+              </div>
+          </div> 
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map --> <!-- Need API key from google-->
+
+<div id="googleMap" style="width:100%;height:400px;"></div>
+<script>
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(51.508742,-0.120850),
+  zoom:5,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script> 
+
+<!-- just picture shows map-->
+
+<img src="map.jpg" class="w3-image w3-greyscale-min" alt="Comapny Location on map" style="width:100%">
+
+<!-- Footer -->
+
+<footer class="w3-container w3-padding-64 w3-center w3-light-grey w3-xlarge">
+
+  <div class="social">
+    <h2>Follow</h2>
+      <i><a target="_blank" href="https://www.facebook.com/" class="fa fa-facebook-official w3-hover-opacity"></a></i>
+      <i><a target="_blank" href="https://www.instagram.com/" class="fa fa-instagram w3-hover-opacity"></a></i>
+      <i><a target="_blank" href="https://twitter.com/" class="fa fa-twitter w3-hover-opacity"></a></i>
+      <i><a target="_blank" href="https://www.youtube.com/" class="fa fa-youtube w3-hover-opacity"></a></i>
+  </div>
+  
+  <br>
+
+  <div class="apps">
+      <h2>Download Our App</h2>
+      <h4> Manage your account, view class schedules, make a personal training appointment and more! </h4>
+      <i><a target="_blank" href="https://www.apple.com/ca/ios/app-store" class="w3-hover-opacity" ><img src="appstore.png" alt="Available on the App Store" style="width:16%"></a></i>
+      <i><a target="_blank" href="https://play.google.com/store/apps" class="w3-hover-opacity" ><img src="googlePlay.png" alt="Available on the Google Play" style="width:16%"></a></i>
+  </div>
+
+
+  <p class="w3-medium"> 2019 &copy; All rights reserved. Created by Michael Szwedo</p>
+
+</footer>
+
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

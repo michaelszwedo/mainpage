@@ -1,0 +1,177 @@
+html, body {
+  font-family: Verdana,sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.mySlides {
+  display: none
+}
+
+
+.w3-image{
+    max-width:100%;height:auto
+  }
+
+    img{
+        vertical-align:middle
+      }
+
+    a{color:inherit
+    }
+ 
+.w3-row-padding,.w3-row-padding>.w3-half,.w3-row-padding>.w3-third,.w3-row-padding>.w3-twothird,
+.w3-row-padding>.w3-threequarter,.w3-row-padding>.w3-quarter,.w3-row-padding>.w3-col{
+    padding:0 8px
+  }
+
+
+.w3-row-padding,.w3-row-padding>.w3-half,.w3-row-padding>.w3-third{
+        margin-left:190px;
+        margin-right:-150px;  
+        margin-top: 2px;
+    }
+
+* {
+    box-sizing: border-box;
+  }
+  
+ 
+  /* Float two columns side by side */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 0 8px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {
+    margin: 0 -5px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    padding: 0;
+    text-align: left;
+    background-color: #fff;
+  }
+
+.w3-container w3-white{ 
+
+}
+
+
+input[type=text], input[type=email],select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    color: #000;
+  }
+
+.responsive {
+    width: 60px;
+    max-width: 60px;
+    height: 60px;
+    max-height: 60px
+  }
+
+.social{
+  font-size: 25px;
+}
+
+.social a:hover{
+    color:   #000;
+  }
+.social a:link {
+    color: #000;
+      text-decoration: none; 
+     }
+.social a:visited	{
+      color: #000;
+     }
+  
+.apps{
+  color: #000;
+}
+
+.apps img{
+  width: 100%;
+    max-width: 250px;
+    min-width: 150px;
+    height: auto;
+}
+
+.w3-opacity, .w3-hover-opacity:hover {
+  opacity: 0.60;
+}
+
+
+.w3-teal,.w3-hover-teal:hover{
+  color:#fff!important;
+  background-color:#ba007c!important
+}
+
+.w3-red, .w3-hover-red:hover {
+      color: #fff !important;
+      background-color: #ee403d !important;
+    }  
+
+.w3-padding-large {
+        padding: 12px 44px !important;
+      }
+
+
+textarea {
+        resize: none;
+      }
+
+
+h3 {
+color: #fff;
+      }
+
+h2{
+  color: #ba007c;
+}
+
+.w3-text{
+color: #ba007c;
+      }
+
+.w3-justify{
+        text-align: left;
+    }
+
+h1{
+      color: #fff;
+}
+
+.w3-padding-32{
+  padding-top:32px!important;
+  padding-bottom:2px!important;
+}
+
