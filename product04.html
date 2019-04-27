@@ -28,7 +28,6 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <!--  <li class="active"><a href="#">Home</a></li>  -->
         <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Products
             <span class="caret"></span></a>
@@ -44,7 +43,7 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="login.html"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+        <li><a href="login.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
       </ul>
     </div>
   </div>
@@ -52,22 +51,15 @@
 
 <!--begin slider in jumbotron -->
 <div class="jumbotron">
-
 <div class="slideshow-container">
-
   <div class="mySlides fade">
-     <img src="mainlogo.jpg" class="img-responsive" style="width:100%" alt="Image">
-     <div class="text">Caption One</div>
+      <a href="player.html"><img src="mainlogo.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
   </div>
-
   <div class="mySlides fade">
-    <img src="mainlogogreen.jpg" class="img-responsive" style="width:100%" alt="Image">
-    <div class="text">Caption Two</div>
+      <a href="deals.html"><img src="mainlogogreen.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
   </div>
-
   <div class="mySlides fade">
-    <img src="mainlogored.jpg" class="img-responsive" style="width:100%" alt="Image">
-    <div class="text">Caption Three</div>
+      <a href="contact.html"><img src="mainlogored.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
   </div>
 
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -90,7 +82,7 @@ function showSlides() {
     slideIndex++;
     if (slideIndex> slides.length) {slideIndex = 1} 
     slides[slideIndex-1].style.display = "block"; 
-    setTimeout(showSlides, 2500); // Change image every 2,5 seconds przy dluzszym czasie     pokazuje sie pyste tlo  ptem kolejny obraz
+    setTimeout(showSlides, 2500); // Change image every 2,5 seconds
 }
 
 function currentSlide(no) {

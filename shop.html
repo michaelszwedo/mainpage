@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>T-Rex Online Hockey Shop</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Hockey Online Store">
+  <meta name="author" content="Michael Szwedo">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="shop.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="shop.html"> <img src="DinoOnIce.png" class="logo" alt="Company Logo"> </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Products
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="player.html">Player</a></li>
+              <li><a href="goalie.html">Goalie</a></li>
+              <li><a href="inline.html">Inline</a></li>
+            </ul>
+          </li>
+        <li><a href="deals.html">Deals</a></li>
+        <li><a href="error.html">NHL Fan Zone</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="login.html"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        <li><a href="login.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--  begin  slider in  jumbotron -->
+<div class="jumbotron">
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <a href="player.html"><img src="mainlogo.jpg" class="img-responsive" style="width:100%" alt="Image" ></a>
+  </div>
+  <div class="mySlides fade">
+    <a href="deals.html"><img src="mainlogogreen.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+  </div>
+  <div class="mySlides fade">
+    <a href="contact.html"><img src="mainlogored.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+  </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<script>
+
+var slideIndex = 0;
+  var slides = document.getElementsByClassName("mySlides");
+
+showSlides();
+
+function showSlides() {    
+    var i;    
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 2500); // Change image every 2,5 seconds       
+}
+
+function currentSlide(no) {
+    var i;    
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex = no;
+    slides[no-1].style.display = "block";
+}
+
+function plusSlides(n) {
+  var newslideIndex = slideIndex + n;
+  if(newslideIndex < 4 && newslideIndex > 0){
+     currentSlide(newslideIndex);
+  }
+}
+</script>
+
+</div>
+<!-- the end slider and jumbotron-->
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-default">
+
+        <div class="panel-body"><a href="player.html"><img src="player.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+        </div>
+        <div class="panel-footer">Shop now and get a gift card</div>
+      </div>
+    </div>
+
+    <div class="col-sm-4"> 
+      <div class="panel panel-default">
+        <div class="panel-body"><a href="goalie.html"><img src="goaliee.jpg" class="img-responsive" style="width:100%" alt="Image"></a></div>
+        <div class="panel-footer">Shop now and get a gift card</div>
+      </div>
+    </div>
+
+    <div class="col-sm-4"> 
+      <div class="panel panel-default">
+        <div class="panel-body"><a href="inline.html"><img src="inline.jpg" class="img-responsive" style="width:100%" alt="Image"></a></div>
+        <div class="panel-footer">Shop now get a gift card</div>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<div class="container">
+    <h3 class="h3"> FEATURED PRODUCTS</h3>
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="product.html">
+                        <img class="pic-1" src="01.jpg" alt="product 01">
+                    </a>
+                    <ul class="social">
+                        <li><a href="product01.html" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label-arrival">New arrival</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="product01.html">RE-AKT 200 HELMET</a></h3>
+                    <div class="price">$299
+                    </div>
+                    <a class="add-to-cart" href="">+ Add To Cart</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="product05.html">
+                        <img class="pic-1" src="05.jpg" alt="product 05">
+                    </a>
+                    <ul class="social">
+                        <li><a href="product05.html" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">Sale</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="product05.html">WARRIOR COVERT QRL PRO PANTS - TEAM STOCK OTTAWA SENATORS</a></h3>
+                    <div class="price">$160
+                        <span>$170</span>
+                    </div>
+                    <a class="add-to-cart" href="">+ Add To Cart</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="product03.html">
+                        <img class="pic-1" src="03.jpg" alt="product 03">
+                    </a>
+                    <ul class="social">
+                        <li><a href="product03.html" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label-arrival">New arrival</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="product03.html">VAPOR X700 GOAL SKATE</a></h3>
+                    <div class="price">$180
+                    </div>
+                    <a class="add-to-cart" href="">+ Add To Cart</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="product04.html">
+                        <img class="pic-1" src="04.jpg" alt="product 04">
+                    </a>
+                    <ul class="social">
+                        <li><a href="product04.html" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">Sale</span>
+                </div>
+                
+                <div class="product-content">
+                    <h3 class="title"><a href="product04.html">VAPOR 1X LITE GLOVE</a></h3>
+                    <div class="price">$160
+                        <span>$195</span>
+                    </div>
+                    <a class="add-to-cart" href="">+ Add To Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3 col-sm-6">
+          <div class="product-grid">
+              <div class="product-image">
+                  <a href="product02.html">
+                      <img class="pic-1" src="02.jpg" alt="product 02">
+                  </a>
+                  <ul class="social">
+                      <li><a href="product02.html" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                      <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                  </ul>
+                  <span class="product-new-label">Sale</span>
+              </div>
+              <div class="product-content">
+                  <h3 class="title"><a href="product02.html">BAUER PRODIGY 46" FLEX 35 COMPOSITE STICK YOUTH</a></h3>
+                  <div class="price">$199
+                      <span>$125</span>
+                  </div>
+                  <a class="add-to-cart" href="">+ Add To Cart</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+          <div class="product-grid">
+              <div class="product-image">
+                  <a href="product11.html">
+                      <img class="pic-1" src="11.jpg" alt="product 11">
+                  </a>
+                  <ul class="social">
+                      <li><a href="product11.html" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                 
+                      <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                  </ul>
+                  <span class="product-new-label-arrival">New arrival</span>
+              </div>
+          
+              <div class="product-content">
+                  <h3 class="title"><a href="product11.html">MISSION INHALER AC5 INLINE HOCKEY SKATES SR</a></h3>
+                  <div class="price">$200
+                  </div>
+                  <a class="add-to-cart" href="">+ Add To Cart</a>
+              </div>
+          </div>
+      </div>
+      
+      <div class="col-md-3 col-sm-6">
+          <div class="product-grid">
+              <div class="product-image">
+                  <a href="product10.html">
+                      <img class="pic-1" src="10.jpg" alt="product 10">
+                  </a>
+                  <ul class="social">
+                      <li><a href="product10.html" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                      <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                  </ul>
+                  <span class="product-new-label">Sale</span>
+              </div>
+          
+              <div class="product-content">
+                  <h3 class="title"><a href="product10.html">WARRIOR PRO SENIOR GOALIE BAG</a></h3>
+                  <div class="price">$105
+                      <span>$140</span>
+                  </div>
+                  <a class="add-to-cart" href="">+ Add To Cart</a>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="col-md-3 col-sm-6">
+          <div class="product-grid">
+              <div class="product-image">
+                  <a href="product08.html">
+                      <img class="pic-1" src="08.jpg" alt="product 08">
+                  </a>
+                  <ul class="social">
+                      <li><a href="product08.html" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                      <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                  </ul>
+                  <span class="product-new-label">Sale</span>
+              </div>
+              
+              <div class="product-content">
+                  <h3 class="title"><a href="product08.html">FISHER F85 PRO POLYBAG</a></h3>
+                  <div class="price">$60
+                      <span>$95</span>
+                  </div>
+                  <a class="add-to-cart" href="">+ Add To Cart</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<br>
+
+
+<footer class="container-fluid text-center">
+
+  <div class="social_media">
+    <a  target="_blank" href="https://www.facebook.com/" class="fa fa-facebook"></a>
+    <a  target="_blank" href="https://www.twitter.com/" class="fa fa-twitter"></a>
+    <a  target="_blank" href="https://www.instagram.com/" class="fa fa-instagram"></a>
+  </div>
+  
+  <br>
+
+  <form class="form-inline">Get deals:
+    <input type="email" class="form-control" size="50" placeholder="Email Address">
+    <button type="button" class="btn btn-danger">Sign Up</button>
+  </form>
+
+<br>
+
+  <small>2019 &copy; All rights reserved. Created by Michal Szwedo</small>
+
+
+</footer>
+
+</body>
+</html>

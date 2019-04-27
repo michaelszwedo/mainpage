@@ -43,7 +43,7 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="login.html"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+        <li><a href="login.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
       </ul>
     </div>
   </div>
@@ -55,17 +55,17 @@
 <div class="slideshow-container">
 
   <div class="mySlides fade">
-     <img src="mainlogo.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <a href="player.html"><img src="mainlogo.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
      <div class="text">Caption One</div>
   </div>
 
   <div class="mySlides fade">
-    <img src="mainlogogreen.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <a href="deals.html"><img src="mainlogogreen.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
     <div class="text">Caption Two</div>
   </div>
 
   <div class="mySlides fade">
-    <img src="mainlogored.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <a href="contact.html"><img src="mainlogored.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
     <div class="text">Caption Three</div>
   </div>
 
@@ -89,7 +89,7 @@ function showSlides() {
     slideIndex++;
     if (slideIndex> slides.length) {slideIndex = 1} 
     slides[slideIndex-1].style.display = "block"; 
-    setTimeout(showSlides, 2500); // Change image every 2,5 seconds przy dluzszym czasie     pokazuje sie pyste tlo  ptem kolejny obraz
+    setTimeout(showSlides, 2500); // Change image every 2,5 seconds
 }
 
 function currentSlide(no) {
