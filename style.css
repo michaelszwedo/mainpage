@@ -27,7 +27,7 @@ body {
 .content-container {
   margin:auto;
   max-width: 960px;
-  padding: 15px 40px;
+  padding: 15px 40px 0px;
 }
 
 .mobile-container {
@@ -291,11 +291,12 @@ aside {
 
 footer {
     width:100%;
+    width: auto;
     background-color:#323232;
     color:white;
     margin-right:auto;
     margin-left:auto;
-    height:50px;
+    height:15px;
     padding:20px;
     text-align: center;
 }
