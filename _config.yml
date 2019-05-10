@@ -10,9 +10,9 @@ theme: jekyll-theme-leap-day
    publisher: "https://www.facebook.com/people/Michael-Szwedo/100014956865161"
     admins: "https://www.facebook.com/people/Michael-Szwedo/100014956865161"
   social:
-    name: "Michael Szwedo"
+    name: Michael Szwedo
       links:
-        - "https://twitter.com/michaelszwedo"
-        - "https://www.facebook.com/people/Michael-Szwedo/100014956865161"
-        - "https://ca.linkedin.com/in/michael-szwedo"
-        - "https://github.com/michaelszwedo"
+        - https://twitter.com/michaelszwedo
+        - https://www.facebook.com/people/Michael-Szwedo/100014956865161
+        - https://ca.linkedin.com/in/michael-szwedo
+        - https://github.com/michaelszwedo
