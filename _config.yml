@@ -1,2 +1,20 @@
 theme: jekyll-theme-leap-day
+title: "My portfolio page"
+description: "Portofolio page show a few of my web projects, information about me and contact information"
+url: "https://github.com/michaelszwedo/mainpage"
+author: michaelszwedo
+twitter:
+username: michaelszwedo
+card: summary
+facebook:
+publisher: "https://www.facebook.com/people/Michael-Szwedo/100014956865161"
+admins: "https://www.facebook.com/people/Michael-Szwedo/100014956865161"
+social:
+name: Michael Szwedo
+links:
+- https://twitter.com/michaelszwedo
+- https://www.facebook.com/people/Michael-Szwedo/100014956865161
+- https://ca.linkedin.com/in/michael-szwedo
+- https://github.com/michaelszwedo
+
   
