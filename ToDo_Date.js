@@ -13,7 +13,7 @@
     }
 
 
-  function ConfirmDate() {
+  function confirmDate() {
       var y = document.getElementById("registration-date").value;
       document.getElementById("choosenDate").innerHTML = y;
     }
