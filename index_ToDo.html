@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Daily Planner</title>
-
   <link rel="stylesheet" href="ToDo_bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles_ToDo.css">
@@ -12,18 +11,10 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 </head>
-
 <body>
-
   <main class="app-container">
-
-  
-    
         <h3 class="text-center">List of tasks to do</h3>
           <p>Choose date</p>
-  
-
-
         <section class="display-date">
             <form> 
               <div class="row">
@@ -34,9 +25,6 @@
               </div>
               </form>              
           </section>
-
-        
-
             <section class="date-container">
                 <div class="row">
                   <form>
@@ -45,54 +33,35 @@
                               <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
                               </span>
                               <input class="form-control" name="registration_date" id="registration-date" type="date"> 
-                              
                               <span class="input-group-btn">
                                   <button class="btn btn-info" type="button" onclick="addNow()"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Current date</button>
-                                 
                                   <button class="btn btn-info" type="button" onclick="addDate()"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Skip to date</button>  
                               </span>
                             </div>
                           </div>
                   </form>
                </div>
-
                <button type="button" class="btn btn-success">confirm date</button>
-
-
               </section>
-
               <div class="progress-container">
                   <div class="progress-bar" id="myBar"></div>
                   </div>
-
-               
-
               <div class="content">
-                
 </div>
-
-
               <section class="new-task-container">
                 <form>
                   <div class="input-group">
                     <input type="text" class="form-control" placeholder="Your task...">
-                    
                     <span class="input-group-btn">
                       <button class="btn btn-primary" type="submit">Add new task</button>
                     </span>
                   </div>
                 </form>
               </section>
-        
               <section class="tasks-container">
                 <ul></ul>
               </section>
-
-          
-
             </main>
-
-        
         
           <script>
             // When the user scrolls the page, execute myFunction 
@@ -106,7 +75,6 @@
             }
             </script>
 
-
 <!-- Date-->
     <script src="http://momentjs.com/downloads/moment-with-locales.js"></script>
     <script src="http://momentjs.com/downloads/moment-timezone-with-data.js"></script>
@@ -117,9 +85,6 @@
     <script src="ToDo_tasks.js"></script>
     <script src="ToDo_new-task.js"></script>
     <script src="ToDo_tasks-list.js"></script>
-
-
-
-    
+  
 </body>
 </html>
