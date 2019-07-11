@@ -11,3 +11,9 @@
       var y = document.getElementById("registration-date").value;
       document.getElementById("choosenDate").innerHTML = y;
     }
+
+
+  function ConfirmDate() {
+      var y = document.getElementById("registration-date").value;
+      document.getElementById("choosenDate").innerHTML = y;
+    }
